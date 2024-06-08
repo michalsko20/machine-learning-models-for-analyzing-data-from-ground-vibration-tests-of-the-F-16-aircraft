@@ -2,7 +2,7 @@
 
 ## Description
 
-This project contains the implementation of various machine learning models for analyzing data from ground vibration tests of the F-16 aircraft. The project consists of several Python scripts that enable data preparation, model training, and evaluation.
+This project contains the implementation of various machine learning models for analyzing data from ground vibration tests of the F-16 aircraft. The project consists of several Python scripts that enable data preparation, model training, and evaluation. Download zip from `https://data.4tu.nl/ndownloader/items/b6dc643b-ecc6-437c-8a8a-1681650ec3fe/versions/1`. Move BenchmarkData folder (from `F-16 Aircraft Benchmark Based on Ground Vibration Test Data_1_all/F16GVT_Files`) to 
 
 ## Files
 

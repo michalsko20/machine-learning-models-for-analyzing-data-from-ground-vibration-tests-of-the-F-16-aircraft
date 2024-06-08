@@ -22,7 +22,7 @@ This project contains the implementation of various machine learning models for 
 
 4. **`model_2.py`**:
    - An extended version of the model with additional Dropout layers to prevent overfitting.
-   - Allows selection of various optimizers such as `Adam`, `Nadam`, `SGD`, `RMSprop`, and `Adagrad`.
+   - Allows selection of various optimizers such as `Adam`, `Nadam`, `RMSprop`, and `Adagrad`.
    - Contains functions for training the model, visualizing results, and evaluating the model.
 
 5. **`model_3_loss_function.py`**:

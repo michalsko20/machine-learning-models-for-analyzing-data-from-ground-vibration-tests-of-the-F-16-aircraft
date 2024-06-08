@@ -1,65 +1,63 @@
-Machine Learning Project
-Description
+# Machine Learning Project
 
-This project contains the implementation of various machine learning models for analyzing data from ground vibration tests of the F-16 aircraft. The project consists of several Python scripts that enable data preparation, model training, and evaluation. Download zip from `https://data.4tu.nl/ndownloader/items/b6dc643b-ecc6-437c-8a8a-1681650ec3fe/versions/1`. Move BenchmarkData folder (from `F-16 Aircraft Benchmark Based on Ground Vibration Test Data_1_all/F16GVT_Files`) to root.
+## Description
 
-Files
+This project contains the implementation of various machine learning models for analyzing data from ground vibration tests of the F-16 aircraft. The project consists of several Python scripts that enable data preparation, model training, and evaluation.
 
-    samples.py:
-        Contains classes and functions for processing input data.
-        Defines the DataSample class, which represents a single data sample.
-        Includes functions for loading data from CSV files and converting them into DataSample objects.
+## Files
 
-    training_validation_sets.py:
-        Contains functions for splitting data into training, validation, and testing sets.
-        Uses train_test_split to divide the data and scalers to normalize the data.
+1. **`samples.py`**: 
+   - Contains classes and functions for processing input data.
+   - Defines the `DataSample` class, which represents a single data sample.
+   - Includes functions for loading data from CSV files and converting them into `DataSample` objects.
 
-    model_1.py:
-        Implementation of a basic neural network model with two hidden layers.
-        Uses the Adam optimizer and the mean_squared_error loss function.
-        Contains functions for training the model, visualizing results, and evaluating the model.
+2. **`training_validation_sets.py`**:
+   - Contains functions for splitting data into training, validation, and testing sets.
+   - Uses `train_test_split` to divide the data and scalers to normalize the data.
 
-    model_2.py:
-        An extended version of the model with additional Dropout layers to prevent overfitting.
-        Allows selection of various optimizers such as Adam, Nadam, SGD, RMSprop, and Adagrad.
-        Contains functions for training the model, visualizing results, and evaluating the model.
+3. **`model_1.py`**:
+   - Implementation of a basic neural network model with two hidden layers.
+   - Uses the `Adam` optimizer and the `mean_squared_error` loss function.
+   - Contains functions for training the model, visualizing results, and evaluating the model.
 
-    model_3_loss_function.py:
-        An extended version of the model with the option to use a custom loss function (custom_loss).
-        Includes an Early Stopping mechanism that automatically stops training when the model stops improving.
-        Contains functions for training the model, visualizing results, and evaluating the model.
+4. **`model_2.py`**:
+   - An extended version of the model with additional Dropout layers to prevent overfitting.
+   - Allows selection of various optimizers such as `Adam`, `Nadam`, `SGD`, `RMSprop`, and `Adagrad`.
+   - Contains functions for training the model, visualizing results, and evaluating the model.
 
-Instructions
+5. **`model_3_loss_function.py`**:
+   - An extended version of the model with the option to use a custom loss function (`custom_loss`).
+   - Includes an Early Stopping mechanism that automatically stops training when the model stops improving.
+   - Contains functions for training the model, visualizing results, and evaluating the model.
 
-    Data Preparation:
-        Use the samples.py script to load and process the input data.
-        The input data should be in CSV format and placed in the BenchmarkData folder.
+## Instructions
 
-    Data Splitting:
-        Use functions from training_validation_sets.py to split the data into training, validation, and testing sets.
+1. **Data Preparation**:
+   - Use the `samples.py` script to load and process the input data.
+   - The input data should be in CSV format and placed in the `BenchmarkData` folder.
 
-    Model Training:
-        Choose one of the models (model_1.py, model_2.py, model_3_loss_function.py) and run the script.
-        The script will automatically load the data, perform training, and save the results.
+2. **Data Splitting**:
+   - Use functions from `training_validation_sets.py` to split the data into training, validation, and testing sets.
 
-    Model Evaluation:
-        After training the model, the script will automatically evaluate it on the test set and save the results in appropriate files.
+3. **Model Training**:
+   - Choose one of the models (`model_1.py`, `model_2.py`, `model_3_loss_function.py`) and run the script.
+   - The script will automatically load the data, perform training, and save the results.
 
-Requirements
+4. **Model Evaluation**:
+   - After training the model, the script will automatically evaluate it on the test set and save the results in appropriate files.
 
-    Python 3.6 or later
-    TensorFlow
-    scikit-learn
-    matplotlib
-    numpy
-    pickle
+## Requirements
 
-Running the Scripts
+- Python 3.6 or later
+- TensorFlow
+- scikit-learn
+- matplotlib
+- numpy
+- pickle
 
-Example of running the model_1.py script:
+## Running the Scripts
 
-bash
+Example of running the `model_1.py` script:
 
+```bash
 python model_1.py
-
-Each script can be run in a similar manner. Ensure all required libraries are installed and the data is properly prepared.
